@@ -1,0 +1,33 @@
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
+
+const AuthModel = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  mobileNumber: {
+    type: String, 
+    required: false,
+  },
+  role: {
+    type: String,
+    required: false,
+    default: "user",
+  },
+  accountCreatedAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+module.exports = mongoose.model("auth", AuthModel);
