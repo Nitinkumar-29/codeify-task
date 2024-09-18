@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Fix for express.urlencoded
 const allowedOrigins = [
-  "https://utsav-alpha.vercel.app",
+  "https://codeify-task-frontend.vercel.app",
   "http://localhost:3000", // Add other allowed origins here
 ];
 const corsOptions = {
