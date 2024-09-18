@@ -4,7 +4,8 @@ const CategoryContext = createContext();
 
 export const CategoryProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
-  const host = "http://localhost:8000/api/category";
+  // const host = "http://localhost:8000/api/category";
+  const host = "https://codeify-task-backend00.vercel.app/api/category"
   const token = localStorage.getItem("token");
   const [categoryName, setCategoryName] = useState("");
 

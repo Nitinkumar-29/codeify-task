@@ -19,7 +19,8 @@ export const AuthProvider = ({ children }) => {
     password: "",
   });
   const navigate = useNavigate();
-  const host = "http://localhost:8000/api/auth";
+  // const host = "http://localhost:8000/api/auth";
+  const host = "https://codeify-task-backend00.vercel.app/api/auth"
 
   //   create account function
   async function createAccount() {

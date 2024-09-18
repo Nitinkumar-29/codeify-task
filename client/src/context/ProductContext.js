@@ -11,7 +11,8 @@ export const ProductProvider = ({ children }) => {
     productCategory: "",
     files: null, // Initialize files as null or empty array
   });
-  const host = "http://localhost:8000/api/product";
+  // const host = "http://localhost:8000/api/product";
+  const host = "https://codeify-task-backend00.vercel.app/api/product";
   const token = localStorage.getItem("token");
 
   // Add a product
